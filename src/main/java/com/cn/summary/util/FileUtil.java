@@ -179,7 +179,7 @@ public class FileUtil {
             fos = new FileOutputStream(file);
             osw = new OutputStreamWriter(fos);
             bw = new BufferedWriter(osw);
-            bw.write("Write2FileByBuffered");
+            bw.write("天下无双");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -237,13 +237,13 @@ public class FileUtil {
     }
 
     public static void main(String[] args) {
-        String filename = "/Users/test.txt";
-         ReadFileByLine(filename);
+//        String filename = "/Users/test.txt";
+//         ReadFileByLine(filename);
         // ReadFileByBytes(filename);
         // ReadFileByChar(filename);
-        String writeFile = "/Users/tempfile/outres.txt";
+        String writeFile = "/Users/hhx/tempfile/outres.txt";
         // Write2FileByOutputStream(writeFile);
-        // Write2FileByBuffered(writeFile);
+         Write2FileByBuffered(writeFile);
 //        Write2FileByFileWriter(writeFile);
     }
 }
